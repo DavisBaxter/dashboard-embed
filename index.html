@@ -1,17 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Dashboard</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard Viewer</title>
   <style>
-    body { margin:0; background:#f8f9fa; }
-    iframe { width:100vw; height:100vh; border:none; }
+    body { margin: 0; background: #f8f9fa; display: flex; height: 100vh; align-items: center; justify-content: center; }
+    iframe { width: 100vw; height: 100vh; border: none; }
   </style>
+  <script>
+    // Redirect through a sandbox viewer
+    const url = encodeURIComponent("https://claude.site/public/artifacts/0c620ef6-8a82-472c-b6a6-46ae869cbcaf");
+    window.location.replace(`https://iframe.ly/api/iframe?url=${url}`);
+  </script>
 </head>
 <body>
-  <iframe 
-    src="https://claude.site/public/artifacts/0c620ef6-8a82-472c-b6a6-46ae869cbcaf/embed" 
-    allowfullscreen>
-  </iframe>
+  <p>Loading dashboard...</p>
 </body>
 </html>
+
